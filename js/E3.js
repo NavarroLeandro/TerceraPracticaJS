@@ -3,3 +3,12 @@
 // de los lanzamientos de los dados. Sumar el resultado de lanzar dos dados y
 // anotar en un array el número de apariciones de dicha suma, repitiendo 50 veces
 // esta operación.
+var resultado = [];
+for(let i=0;i<50;i++){
+  var numero1 =  Math.floor(Math.random() * 6) + 1;
+  var numero2 =  Math.floor(Math.random() * 6) + 1;
+  resultado.push(numero1 + numero2);
+  
+}
+
+document.write("Lista de los resultados obtenidos: " + resultado);
